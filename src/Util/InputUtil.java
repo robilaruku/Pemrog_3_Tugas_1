@@ -12,4 +12,10 @@ public class InputUtil {
         return data;
     }
 
+    public static Integer inputInteger(String info) {
+        System.out.println(info + " : ");
+        Integer data = scanner.nextInt();
+        return data;
+    }
+
 }
