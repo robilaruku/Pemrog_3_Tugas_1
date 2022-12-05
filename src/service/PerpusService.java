@@ -1,4 +1,4 @@
-package service;
+package Service;
 
 public interface PerpusService {
 
