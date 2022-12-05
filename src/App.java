@@ -3,13 +3,12 @@ import service.PerpusServiceImpl;
 
 public class App {
 
-    public static void main(String[] args)  {
-        showListBuku();
+    public static PerpusService perpusService = new PerpusServiceImpl();
+
+    public static void main(String[] args) {
+        perpusService.showListBuku();
+        perpusService.pinjamBuku();
     }
 
-    public static void showListBuku() {
-        PerpusService perpusService = new PerpusServiceImpl();
-        perpusService.showListBuku();
-    }
 
 }
