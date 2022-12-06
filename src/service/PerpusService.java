@@ -8,5 +8,5 @@ public interface PerpusService {
 
     void pinjamBuku();
 
-    void showPeminjam(Integer kodeBuku, String npm, String nama, String tanggal);
+    void showPeminjam(Integer kodeBuku, String npm, String nama, String tanggal, String namaBuku);
 }
