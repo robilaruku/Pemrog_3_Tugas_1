@@ -28,7 +28,7 @@ public class PerpusServiceImpl implements PerpusService {
 
             showPeminjam(kodeBuku, npm, nama, showCurrentDate(), getNamaBuku(kodeBuku));
 
-        } catch (ArrayIndexOutOfBoundsException exception) {
+        } catch (ArrayIndexOutOfBoundsException e) {
             showErrorKodeBuku();
         } catch (InputMismatchException e) {
             showErrorKodeBuku();
