@@ -10,8 +10,7 @@ public class PerpusServiceImpl implements PerpusService {
 
     private String listBuku[] = new String[5];
 
-    @Override
-    public void listBuku() {
+    private void listBuku() {
         listBuku[0] = "1 => Buku Agama";
         listBuku[1] = "2 => Buku Matematika";
         listBuku[2] = "3 => Buku Bahasa Indonesia";
@@ -49,8 +48,7 @@ public class PerpusServiceImpl implements PerpusService {
         showBlankEnterSpace();
     }
 
-    @Override
-    public void showPeminjam(Integer kodeBuku, String npm, String nama, String tanggal, String namaBuku) {
+    private void showPeminjam(Integer kodeBuku, String npm, String nama, String tanggal, String namaBuku) {
         showHeaderPeminjam();
         System.out.println("Kode Buku : " + kodeBuku);
         System.out.println("NPM : " + npm);
