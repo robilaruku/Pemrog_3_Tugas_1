@@ -10,7 +10,7 @@ public class PerpusServiceImpl implements PerpusService {
 
     private String listBuku[] = new String[5];
 
-    private void listBuku() {
+    public PerpusServiceImpl() {
         listBuku[0] = "1 => Buku Agama";
         listBuku[1] = "2 => Buku Matematika";
         listBuku[2] = "3 => Buku Bahasa Indonesia";
@@ -37,7 +37,6 @@ public class PerpusServiceImpl implements PerpusService {
 
     @Override
     public void showListBuku() {
-        listBuku();
         showBlankEnterSpace();
         showHeaderListBuku();
 
@@ -84,7 +83,6 @@ public class PerpusServiceImpl implements PerpusService {
     }
 
     private String getNamaBuku(Integer kodeBuku) {
-        listBuku();
         return (listBuku[kodeBuku - 1].substring(4));
     }
 
